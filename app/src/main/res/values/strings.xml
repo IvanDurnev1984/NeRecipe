@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="european_type">European cuisine</string>
+    <string name="asian_type">Asian cuisine</string>
+    <string name="panasian_type">Panasian cuisine</string>
+    <string name="eastern_type">Eastern cuisine</string>
+    <string name="american_type">American cuisine</string>
+    <string name="russian_type">Russian cuisine</string>
+    <string name="mediterranean_type">Mediterranean cuisine</string>
+    <string name="title_hint">Name of the recipe</string>
+    <string name="author_name_hint">Author</string>
+    <string name="text_recipe_hint">Recipe</string>
+    <string name="button_apply_text">Apply</string>
+    <string name="all_recipes">Recipes</string>
+    <string name="filter">Filter</string>
+    <string name="favorites">Favorites</string>
+    <string name="text_background">Theres nothing here yet!</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="app_name">NeRecipe</string>
+    <string name="button_add_description">Add</string>
+    <string name="icon_background_description">Icon background</string>
+    <string name="text_hint">Hint</string>
+    <string name="button_clear_filter">ClearFilter</string>
+    <string name="button_save_description">Save</string>
+    <string name="menu_options_description">Menu</string>
+    <string name="category_recipe_hint">Category</string>
+    <string name="search">Search</string>
+    <string name="button_favorite_description">Favorite</string>
+
+</resources>
