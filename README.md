@@ -11,16 +11,27 @@
 
 Демонстрация функционала приложения:
 
+
 Экран со списком рецептов
 
+https://user-images.githubusercontent.com/99552214/185205986-64f6a2e9-9d13-4c88-9a14-659a5e87fc32.mp4
 
 Экран просмотра рецепта
 
+https://user-images.githubusercontent.com/99552214/185206069-84e1010a-4253-4190-aa9a-15b6ed011174.mp4
 
 Экран редактирования
 
+https://user-images.githubusercontent.com/99552214/185206111-2856e6f9-dbe8-4c60-bd1d-2495e19f034c.mp4
 
 Экран создания рецепта
 
+https://user-images.githubusercontent.com/99552214/185206156-a5bdeb43-a1a6-4f1a-b460-6926d5025ba6.mp4
 
 Экран фильтров
+
+https://user-images.githubusercontent.com/99552214/185206204-221fd1b7-1038-47bd-bf51-9dba74f5ab3d.mp4
+
+Экран избранное
+
+https://user-images.githubusercontent.com/99552214/185206247-b56f3f1a-c827-48c8-af81-5aa6657bf860.mp4
