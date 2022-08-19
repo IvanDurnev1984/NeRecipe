@@ -35,3 +35,7 @@ https://user-images.githubusercontent.com/99552214/185206204-221fd1b7-1038-47bd-
 Экран избранное
 
 https://user-images.githubusercontent.com/99552214/185206247-b56f3f1a-c827-48c8-af81-5aa6657bf860.mp4
+
+Доработка фильтра
+
+https://user-images.githubusercontent.com/99552214/185638293-91f37619-899b-43d5-8775-7f7b0ec6ad37.mp4
