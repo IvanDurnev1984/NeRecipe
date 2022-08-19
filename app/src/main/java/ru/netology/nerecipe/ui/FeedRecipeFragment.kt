@@ -56,23 +56,30 @@ class FeedRecipeFragment : Fragment() {
         savedInstanceState: Bundle?
     ) = EmptyFieldBinding.inflate(layoutInflater, container, false).also { binding ->
 
-        val adapter = RecipeAdapter(viewModel)
-        binding.listRecipe.adapter = adapter
+        val recipeAdapter = RecipeAdapter(viewModel)
+        binding.listRecipe.adapter = recipeAdapter
 
-        viewModel.data.observe(viewLifecycleOwner) { recipes ->
-            adapter.submitList(recipes)
+        fun viewRecipe() {
+            viewModel.data.observe(viewLifecycleOwner) { recipe ->
+                recipeAdapter.submitList(recipe)
+            }
         }
+        viewRecipe()
 
         if (viewModel.filterIsActive) {
-
             binding.buttonClearFilter.isVisible = viewModel.filterIsActive
             binding.buttonClearFilter.setOnClickListener {
                 viewModel.clearFilter()
                 viewModel.filterIsActive = false
                 binding.buttonClearFilter.visibility = View.GONE
-                viewModel.data.observe(viewLifecycleOwner) { recipe ->
-                    adapter.submitList(recipe)
-                }
+                viewRecipe()
+                viewModel.toggleCheckEuropean = false
+                viewModel.toggleCheckPanasian = false
+                viewModel.toggleCheckAmerican = false
+                viewModel.toggleCheckEastern = false
+                viewModel.toggleCheckMediterranean = false
+                viewModel.toggleCheckRussian = false
+                viewModel.toggleCheckAsian = false
             }
         } else {
             binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
@@ -85,15 +92,11 @@ class FeedRecipeFragment : Fragment() {
 
                     if (newText.isNotBlank()) {
                         viewModel.onSearchClicked(newText)
-                        viewModel.data.observe(viewLifecycleOwner) { recipe ->
-                            adapter.submitList(recipe)
-                        }
+                        viewRecipe()
                     }
                     if (TextUtils.isEmpty(newText)){
                         viewModel.clearFilter()
-                        viewModel.data.observe(viewLifecycleOwner) { recipe ->
-                            adapter.submitList(recipe)
-                        }
+                        viewRecipe()
                     }
                     return false
                 }
@@ -108,6 +111,7 @@ class FeedRecipeFragment : Fragment() {
                 }
                 R.id.filter -> {
                     viewModel.filterFragment.call()
+                    viewModel.clearFilter()
                     true
                 }
                 else -> false

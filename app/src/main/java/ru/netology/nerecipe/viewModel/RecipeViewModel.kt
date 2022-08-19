@@ -29,7 +29,6 @@ class RecipeViewModel(application: Application) : AndroidViewModel(application),
     private val currentRecipe = MutableLiveData<Recipe?>(null)
 
 
-
     fun clearFilter() {
         repository.getData()
     }
@@ -90,39 +89,54 @@ class RecipeViewModel(application: Application) : AndroidViewModel(application),
         singleFragment.call()
     }
 
+    var toggleCheckEuropean = false
+    var toggleCheckAsian = false
+    var toggleCheckPanasian = false
+    var toggleCheckEastern = false
+    var toggleCheckAmerican = false
+    var toggleCheckRussian = false
+    var toggleCheckMediterranean = false
+
     fun showEuropean(categoryRecipe: String) {
         repository.showEuropean(categoryRecipe)
         filterIsActive = true
+        toggleCheckEuropean = false
     }
 
     fun showAsian(categoryRecipe: String) {
         repository.showAsian(categoryRecipe)
         filterIsActive = true
+        toggleCheckAsian = false
     }
 
     fun showPanasian(categoryRecipe: String) {
         repository.showPanasian(categoryRecipe)
         filterIsActive = true
+        toggleCheckPanasian = false
     }
 
     fun showEastern(categoryRecipe: String) {
         repository.showEastern(categoryRecipe)
         filterIsActive = true
+        toggleCheckEastern = false
     }
 
     fun showAmerican(categoryRecipe: String) {
         repository.showAmerican(categoryRecipe)
         filterIsActive = true
+        toggleCheckAmerican = false
     }
 
     fun showRussian(categoryRecipe: String) {
         repository.showRussian(categoryRecipe)
         filterIsActive = true
+        toggleCheckRussian = false
     }
 
     fun showMediterranean(categoryRecipe: String) {
         repository.showMediterranean(categoryRecipe)
         filterIsActive = true
+        toggleCheckMediterranean = false
     }
 
 
