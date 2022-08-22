@@ -73,13 +73,13 @@ class FeedRecipeFragment : Fragment() {
                 viewModel.filterIsActive = false
                 binding.buttonClearFilter.visibility = View.GONE
                 viewRecipe()
-                viewModel.toggleCheckEuropean = false
-                viewModel.toggleCheckPanasian = false
-                viewModel.toggleCheckAmerican = false
-                viewModel.toggleCheckEastern = false
-                viewModel.toggleCheckMediterranean = false
-                viewModel.toggleCheckRussian = false
-                viewModel.toggleCheckAsian = false
+                viewModel.toggleCheckEuropean = true
+                viewModel.toggleCheckPanasian = true
+                viewModel.toggleCheckAmerican = true
+                viewModel.toggleCheckEastern = true
+                viewModel.toggleCheckMediterranean = true
+                viewModel.toggleCheckRussian = true
+                viewModel.toggleCheckAsian = true
             }
         } else {
             binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {

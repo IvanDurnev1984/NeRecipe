@@ -89,13 +89,13 @@ class RecipeViewModel(application: Application) : AndroidViewModel(application),
         singleFragment.call()
     }
 
-    var toggleCheckEuropean = false
-    var toggleCheckAsian = false
-    var toggleCheckPanasian = false
-    var toggleCheckEastern = false
-    var toggleCheckAmerican = false
-    var toggleCheckRussian = false
-    var toggleCheckMediterranean = false
+    var toggleCheckEuropean = true
+    var toggleCheckAsian = true
+    var toggleCheckPanasian = true
+    var toggleCheckEastern = true
+    var toggleCheckAmerican = true
+    var toggleCheckRussian = true
+    var toggleCheckMediterranean = true
 
     fun showEuropean(categoryRecipe: String) {
         repository.showEuropean(categoryRecipe)
