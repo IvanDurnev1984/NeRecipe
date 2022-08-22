@@ -38,4 +38,4 @@ https://user-images.githubusercontent.com/99552214/185206247-b56f3f1a-c827-48c8-
 
 Доработка фильтра
 
-https://user-images.githubusercontent.com/99552214/185638293-91f37619-899b-43d5-8775-7f7b0ec6ad37.mp4
+https://user-images.githubusercontent.com/99552214/185918945-19fb8fa9-d824-416b-9097-ad2d2027270a.mp4
